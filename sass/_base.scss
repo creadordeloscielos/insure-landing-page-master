@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+    } 
+        
+ a{
+ text-decoration: none;
+ font-family: $font-karla;
+ }
+
+p{
+     font-family: $font-karla;
+    }
+
+h1,h2,h3,h4{
+    font-family: $font-DM;
+   }                        
+
+.wrapper{
+    max-width: 1500px;
+    width: 80%;
+    margin: auto;
+    }    
+
+
+.dp-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+

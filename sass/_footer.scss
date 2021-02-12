@@ -1,0 +1,85 @@
+footer{
+    padding: 40px 0px;
+    background: $Very-Light-Gray;
+    position: relative;
+    z-index: 1;
+}
+
+footer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+.logo {
+    padding-bottom: 30px;
+    border-bottom: .5px solid #837d87a4;
+    img{
+        position: relative;
+    }
+
+    }    
+
+.redes {
+    i{
+     color: $Dark-Grayish-Violet;
+     font-size: 30px;
+     &:hover{
+         cursor: pointer;
+         color: $Very-Dark-Violet;
+         }
+    } 
+}
+
+.links,.logo {
+    position: relative; // z-indez solo funcio posionado los elemnetos por eso la posicion relativa
+}
+
+.links ul li:first-child a{
+     margin: 40px auto;
+     padding: 0px;
+     color: $Dark-Grayish-Violet;
+    }
+
+.links a{
+    margin-bottom: 10px;
+    border-bottom: 1px solid $Very-Light-Gray;
+    display: inline-block;
+    color: $Very-Dark-Violet;
+    font-weight: 700;
+    &:hover{
+        border-bottom: 1px solid #000;
+       
+    }
+
+    }
+    
+.links .container,.different .main-txt { // CAMBIO LA PROPIEDAD FLEX PARA NO CENTRAR LOS ELEMENTOS
+    align-items: start;
+}
+ 
+.different .container h2{
+    font-size: 4rem;
+    color: $Very-Dark-Violet;
+}
+
+.different .main-txt{
+    margin: 5rem 0px;
+}
+
+.different .txt{
+    width: 25%;
+}
+
+.different .txt h3{
+    margin: 20px 0px;
+    color: $Very-Dark-Violet;
+    font-size: 1.8rem;
+}
+
+.different .txt p{
+    line-height: 1.5;
+    color: $Dark-Grayish-Violet;
+    font-weight: 400;  
+}
