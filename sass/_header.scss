@@ -5,16 +5,23 @@ header {
 }
 
 .menu{
-    padding: 20px 0px
+    padding: 30px 0px
     }
 
-nav a{
+nav {
+    img{
+        display: none;
+        }
+    a{
     display: block;
-    padding: 0px 10px;
+    padding: 0px 20px;
     color: $Dark-Grayish-Violet;
     font-size: 1.2rem;
-    font-weight: 700;
-    }    
+    font-weight: 400;
+    &:hover{
+        color: $Very-Dark-Violet;}
+    }  
+        }  
 
 nav li:last-child{
    @include btn-hover-black;
@@ -22,42 +29,50 @@ nav li:last-child{
 
 .banner{
     padding: 150px 0px;
-    background: linear-gradient(180deg, $Dark-Violet 67%, rgba(255,255,255,1) 67%);
+    background: linear-gradient(180deg, $Dark-Violet 70%, rgba(255,255,255,1) 70%);
     color: #fff;
     position: relative;
     overflow: hidden;
+    
+    .wave-desktop{
+            position: absolute;
+            top: 0;
+            right: 0;
+            top: -43px; 
+        }
+
     h1{
-        font-size: 3rem;
+        font-size: 4.5rem;
         font-size: 700;
         }
+
     p{
         margin: 25px 0px;
         line-height: 1.5;
+        position: relative;
+        
         }
-            
-    img{
-        position: absolute;
-        top: -43px;
-        right: 0;
-        height: 100%;
+
+    .txt{
+        padding: 20px 10px 0px 0px ;
+        max-width: 550px;
+        z-index: 1;
         }        
+
+      @include btn-hover-white
+
+      .container{
+          display: flex;
+          justify-content: space-between;
+          }       
+          
     }
+        
+    
+        
 
-.banner .container img{
-    display: relative !important;
-    border: 1px solid red;
+ 
 
-    }
-
-.banner .txt{
-    padding: 20px 0px;
-    border: 1px solid red;
-    }        
-
-.banner {
-    @include btn-hover-white
-
-    }
 
  .find {
      margin: 100px auto;
@@ -72,6 +87,7 @@ nav li:last-child{
          color: #fff;
          font-size: 3.5rem;
          width: 480px;
+         max-width: 100%;
          margin-right: 20px;
          position: relative; 
         
@@ -91,5 +107,9 @@ nav li:last-child{
           right: 0;
           height: 100%;
         
-          }         
+          }
+
+      .wave-mobile{
+          display: none;
+          }                 
      }       

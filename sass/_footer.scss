@@ -2,14 +2,17 @@ footer{
     padding: 40px 0px;
     background: $Very-Light-Gray;
     position: relative;
-    z-index: 1;
+    text-transform: uppercase;
+    
+    .waves-mobile{
+        display: none;
+    }
 }
 
 footer img{
     position: absolute;
     top: 0;
     left: 0;
-   
 }
 
 .logo {
@@ -48,6 +51,7 @@ footer img{
     display: inline-block;
     color: $Very-Dark-Violet;
     font-weight: 700;
+    letter-spacing: 10;
     &:hover{
         border-bottom: 1px solid #000;
        
@@ -83,3 +87,9 @@ footer img{
     color: $Dark-Grayish-Violet;
     font-weight: 400;  
 }
+
+.different .wave-desktop{
+            position: absolute;
+            left:0;
+            top: 550px; 
+        }
