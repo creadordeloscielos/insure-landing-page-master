@@ -33,6 +33,10 @@ nav li:last-child{
     color: #fff;
     position: relative;
     overflow: hidden;
+
+    .mobile{
+        display: none;
+        }
     
     .wave-desktop{
             position: absolute;
@@ -53,10 +57,14 @@ nav li:last-child{
         
         }
 
-    .txt{
+    .txt .main{
         padding: 20px 10px 0px 0px ;
         max-width: 550px;
         z-index: 1;
+        }        
+
+    .txt img {
+        display: none;
         }        
 
       @include btn-hover-white

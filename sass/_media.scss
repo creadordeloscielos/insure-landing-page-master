@@ -13,7 +13,11 @@
         width: 30%;
   
         }
-    } 
+    }
+
+   .banner h1{
+       font-size: 3rem;
+       }      
 
 }
 
@@ -22,8 +26,11 @@
     .menu {
         display: block;
         padding: 20px 0px;
+
         i{
             display: block;
+            border: 1px solid $Dark-Violet;
+            padding: 4px;
             }
         }
 
@@ -67,7 +74,69 @@
           text-align: center;
           padding: 15px 0px;
 
-             }         
+             }
+
+      .banner {
+         background:  $Dark-Violet;
+         padding: 0px;
+         overflow: visible;
+
+         .desktop {
+             display: none;
+             }
+
+         .mobile{
+             display: block;
+             }        
+
+        .wrapper {
+            width: 100%;
+            }
+
+         .container{
+             flex-direction: column-reverse;
+             }
+
+           p{
+               margin: 25px 0px;
+               line-height: 1.5;
+               
+               }       
+
+          .txt  {
+
+              position: relative;
+            
+
+              img{
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  }
+
+              .bottom{
+                  right: 0;
+                  top:320px;
+                  
+                  }        
+
+            .main{    
+              padding: 70px 0px;
+              margin-bottom: 20px;
+              text-align: center;
+              margin: auto;
+              width: 90%; 
+              position: relative;
+                          
+                          }
+
+              }
+
+             .wave-desktop{
+                 display: none;
+                 } 
+                    
+        }                       
 
 
     .find {
@@ -86,7 +155,7 @@
             }
 
          h3 {
-             font-size: 2rem;
+             font-size: 2.5rem;
              margin-bottom: 15px;
              margin-right: 0px;
              }
@@ -109,6 +178,12 @@
 .different {
 
     text-align: center;
+    margin-top: 50px;
+
+    span {
+        border: 1px solid red;
+        
+        }
     .main-txt{
 
         flex-direction: column;
@@ -121,7 +196,10 @@
         }
 
      .wave-desktop{
-         border: 1px solid red;}       
+         border: 1px solid red;
+         display: none;} 
+
+               
     }  
 
     footer {   //*FOOTER*//
@@ -154,55 +232,34 @@
 
     }
 
-
 }
 
 
 @media screen and(max-width:700px){
+
+
+
 
 .different .container h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     }
+
+ .different .txt h3{
+    font-size: 1.5rem;
+    }       
+
 
 }
 
+@media screen and(max-width:400px){
 
-
-@media screen and(max-width:700px){
-
-.banner {
-
-    background: $Dark-Violet;
-    padding: 0;
-
-    .container{
-        flex-direction: column-reverse;
-
-    img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        right: 0;
-        }
-
-        }
-
-    .txt {
-        padding: 50px 0px;
-        text-align: center;
-        margin: auto;
-        z-index: 0;
-        position: relative;
-
-        h1{
-            font-size: 3.5rem;
-           
-            }
-        }
+    .banner h1{
+    font-size: 2.5rem;
     }
 
- .different .wave-desktop{
-            display: none;
-        }       
+  .find h3{
+      font-size: 2rem;
+      }
 
-}    
+}
+
